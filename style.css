@@ -2,37 +2,65 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    border: 1px solid red;
+    animation: rotating-background 5s infinite linear;
+
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: 'Kumbh Sans', sans-serif;
+
 }
 
 main {
+    max-width: 1000px;
+    margin: 0px auto;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* --------------------------- Header ------------------------------------- */
+header {
+    padding: 20px 0 150px 0;
+}
+
+.header-background-img {
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    animation: rotating-background 15s infinite linear;
+    z-index: -1;
+}
+
+@keyframes rotating-background {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------------- Info --------------------------------------- */
+
+.info-container {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    gap: 40px;
 }
 
-h1 {
-    font-size: 50px;
-    padding: 50px 0px;
-    color: #33394F;
+.container-charts-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    color: #6e7795;
+.text-info {
+    max-width: 600px;
+    width: 100%;
 }
 
-button {
+.info-container button {
     padding: 15px 35px;
     border-radius: 25px;
     border: none;
@@ -42,45 +70,40 @@ button {
     margin: 30px 0px;
 }
 
-/* --------------------------- Header ------------------------------------- */
-
-
-
-.header-logo {
-    margin-top: 50px;
-}
-
-.header-background-img {
-    position: absolute;
-    scale: 0.1;
-}
-
-
-
-/* --------------------------- Info ------------------------------------- */
-
-
-
-.info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-info {
+.charts-img {
     max-width: 600px;
+    width: 100%;
+
 }
+
+/* ------------- info-container värden ------------- */
+
+h1 {
+    font-size: 50px;
+    padding: 30px 0px;
+    color: #333950;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #6e7795;
+}
+
+/* ----------------------------------------------------------------------- */
 
 
 /* --------------------------- Footer ------------------------------------- */
 
 footer {
-    background-color: #25293a;
-    height: 40vh;
-    width: 100vw;
+    background-color: #252939;
+    min-height: 50vh;
 }
 
-.footer-background-img{
+.footer-background-img {
     position: absolute;
     scale: 0.3;
 }
@@ -106,13 +129,42 @@ footer {
 
 /* --------------------------- Media Query ------------------------------------- */
 
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+}
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .background-img {
         position: absolute;
         top: -510px;
         left: -360px;
         scale: 0.4;
 
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        padding: 30px 0 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .charts {
+        scale: 0.7;
+    }
+
+    .info-container {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 }
