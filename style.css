@@ -2,20 +2,26 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    animation: rotating-background 5s infinite linear;
-
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-
+    overflow-x: hidden;
 }
 
 main {
     max-width: 1000px;
     margin: 0px auto;
-    min-height: 100vh;
-    padding: 50px 20px;
+    /* min-height: 100vh; */
+    padding: 50px 20px 0px;
+    /* overflow: hidden; */
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5175ff;
 }
 
 /* --------------------------- Header ------------------------------------- */
@@ -87,7 +93,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 25px;
     color: #6e7795;
@@ -105,12 +111,108 @@ footer {
 
 .footer-background-img {
     position: absolute;
-    scale: 0.3;
+    top: 600px;
+    left: -700px;
+    animation: rotating-background-backwards 15s infinite linear;
+    z-index: 0;
+}
+
+@keyframes rotating-background-backwards {
+    100% {
+        transform: rotate(0deg);
+    }
+
+    0% {
+        transform: rotate(360deg);
+    }
 }
 
 
+/* ------------------- Cards ---------------------------------------------- */
 
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    transform: translateY(50%);
+    gap: 20px;
+    text-align: center;
+}
+
+.cards {
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 50px;
+
+}
+
+h3 {
+    padding-bottom: 30px;
+}
+
+.basic-and-ultimate-btn {
+    background-color: #e4eaff;
+    color: #5175ff;
+}
+
+.pro-btn {
+    background-color: #fff;
+    color: #5175ff;
+}
+
+.card-basic {}
+
+.card-pro {
+    background-color: #5175ff;
+}
+
+.card-ultimate {}
+
+.bill-text {
+    color: #252939;
+    padding-bottom: 30px;
+}
+
+.bill-text-white {
+    color: #fff;
+    padding-bottom: 30px;
+
+}
+
+.middle-card-text {
+    color: #c3d0ff;
+}
+
+.cards-text {
+    padding: 10px;
+}
+
+/* ------------------- Launch Date ---------------------------------------------- */
+
+.launch-date {
+    display: flex;
+}
+
+.launch-date-white {
+    color: #fff;
+}
+
+.launch-date-blue {
+    color: #557aff;
+}
+
+/* ------------------- Countdown ---------------------------------------------- */
+
+.countdown {
+    background-color: #333950;
+}
 
 
 
