@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -184,9 +185,8 @@ h3 {
 
 footer {
     background-color: #252939;
-    min-height: 50vh;
+    min-height: 70vh;
     overflow-x: hidden;
-    /* position: relative; */
 }
 
 .footer-background-img {
