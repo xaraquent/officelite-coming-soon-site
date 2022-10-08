@@ -12,9 +12,7 @@ body {
 main {
     max-width: 1000px;
     margin: 0px auto;
-    /* min-height: 100vh; */
     padding: 50px 20px 0px;
-    /* overflow: hidden; */
 }
 
 button {
@@ -82,7 +80,7 @@ header {
 
 }
 
-/* ------------- info-container värden ------------- */
+/* ------------- info-container values ------------- */
 
 h1 {
     font-size: 50px;
@@ -102,30 +100,6 @@ p {
 /* ----------------------------------------------------------------------- */
 
 
-/* --------------------------- Footer ------------------------------------- */
-
-footer {
-    background-color: #252939;
-    min-height: 50vh;
-}
-
-.footer-background-img {
-    position: absolute;
-    top: 600px;
-    left: -700px;
-    animation: rotating-background-backwards 15s infinite linear;
-    z-index: 0;
-}
-
-@keyframes rotating-background-backwards {
-    100% {
-        transform: rotate(0deg);
-    }
-
-    0% {
-        transform: rotate(360deg);
-    }
-}
 
 
 /* ------------------- Cards ---------------------------------------------- */
@@ -139,6 +113,7 @@ footer {
     transform: translateY(50%);
     gap: 20px;
     text-align: center;
+    z-index: 10;
 }
 
 .cards {
@@ -171,6 +146,18 @@ h3 {
 
 .card-pro {
     background-color: #5175ff;
+    background-image: url("./starter-code/assets/home/bg-pattern-pricing.svg");
+    background-position: bottom;
+}
+
+.card-pro-background-img {
+    position: absolute;
+    scale: 0.8;
+    bottom: -50px;
+    left: 50px;
+
+    /* animation: rotating-background 15s infinite linear; */
+    /* z-index: 0; */
 }
 
 .card-ultimate {}
@@ -194,10 +181,37 @@ h3 {
     padding: 10px;
 }
 
+/* --------------------------- Footer ------------------------------------- */
+
+footer {
+    background-color: #252939;
+    min-height: 50vh;
+    overflow-x: hidden;
+    /* position: relative; */
+}
+
+.footer-background-img {
+    position: absolute;
+    /* top: 600px;
+    left: -700px; */
+    /* animation: rotating-background-backwards 15s infinite linear; */
+}
+
+@keyframes rotating-background-backwards {
+    100% {
+        transform: rotate(0deg);
+    }
+
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
 /* ------------------- Launch Date ---------------------------------------------- */
 
 .launch-date {
     display: flex;
+    letter-spacing: 4px;
 }
 
 .launch-date-white {
@@ -206,14 +220,48 @@ h3 {
 
 .launch-date-blue {
     color: #557aff;
+    text-indent: 5px;
 }
 
 /* ------------------- Countdown ---------------------------------------------- */
 
-.countdown {
-    background-color: #333950;
+.countdown-container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 300px 20px 0px;
 }
 
+.countdown-placeholder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown-timers {
+    display: flex;
+    gap: 10px;
+}
+
+.countdown {
+    background-color: #333950;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.countdown h2 {
+    color: #fff;
+    font-size: 55px;
+}
+
+.countdown-placeholder button {
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5175ff;
+    color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px -12px; */
+    margin-bottom: 70px;
+}
 
 
 
@@ -269,4 +317,5 @@ h3 {
         flex-direction: column-reverse;
         text-align: center;
     }
+
 }
