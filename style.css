@@ -19,8 +19,12 @@ button {
     padding: 15px 35px;
     border-radius: 25px;
     border: none;
-    background-color: #5175ff;
+    background-color: #5274ff;
     font-weight: 600;
+}
+
+#main-btn:hover {
+    background-color: hsl(228, 100%, 50%);
 }
 
 /* --------------------------- Header ------------------------------------- */
@@ -140,8 +144,17 @@ h3 {
     color: #5175ff;
 }
 
+.basic-and-ultimate-btn:hover {
+    background-color: #a9bbff;
+}
+
 .pro-btn {
     background-color: #fff;
+    color: #5175ff;
+}
+
+.pro-btn:hover {
+    background-color: #a9bbff;
     color: #5175ff;
 }
 
@@ -272,7 +285,9 @@ footer {
     z-index: 1;
 }
 
-
+#footer-btn:hover {
+    background-color: hsl(228, 100%, 50%);
+}
 
 
 
