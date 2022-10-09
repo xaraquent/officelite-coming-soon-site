@@ -105,5 +105,15 @@ p {
 
 .right-side-bg-img {
     position: absolute;
-    background-color: #333950;
+
 }
+
+.img-container {
+    width: 500px;
+    background-color: #333950;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ------------------- Sign up Input ---------------------------------------------- */

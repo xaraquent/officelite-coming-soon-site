@@ -20,6 +20,7 @@ button {
     border-radius: 25px;
     border: none;
     background-color: #5175ff;
+    font-weight: 600;
 }
 
 /* --------------------------- Header ------------------------------------- */
@@ -113,7 +114,8 @@ p {
     transform: translateY(50%);
     gap: 20px;
     text-align: center;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
 }
 
 .cards {
@@ -185,13 +187,14 @@ h3 {
 
 footer {
     background-color: #252939;
-    min-height: 70vh;
-    overflow-x: hidden;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .footer-background-img {
     position: absolute;
-    top: 600px;
+    top: 100px;
     left: -700px;
     animation: rotating-background-backwards 15s infinite linear;
 }
