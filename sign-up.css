@@ -105,15 +105,78 @@ p {
 
 .right-side-bg-img {
     position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.right-side-container {
+    width: 500px;
+    background-color: #333950;
+    position: relative;
+    background-image: url(./starter-code/assets/sign-up/bg-pattern-side.svg);
+    background-position: -750px -800px;
+    background-size: 165vh;
+    background-repeat: no-repeat;
 
 }
 
 .img-container {
-    width: 500px;
-    background-color: #333950;
-    position: relative;
+    height: 100vh;
+    position: absolute;
     overflow: hidden;
+    /* background-color: red; */
+
 }
 
+.input-container {
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+}
+
+.input-container input {
+    border: none;
+    border-bottom: 1px solid #b2b1b1;
+}
+
+#name {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#email-address {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#phone-number {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#company {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+.button {
+    padding: 18px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5175ff;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0px;
+}
 
 /* ------------------- Sign up Input ---------------------------------------------- */
