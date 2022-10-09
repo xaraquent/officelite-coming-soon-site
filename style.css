@@ -215,6 +215,9 @@ footer {
 .launch-date {
     display: flex;
     letter-spacing: 4px;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 300px 0px 10px;
 }
 
 .launch-date-white {
@@ -231,7 +234,8 @@ footer {
 .countdown-container {
     max-width: 1000px;
     margin: 0px auto;
-    padding: 300px 20px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .countdown-placeholder {
@@ -256,7 +260,7 @@ footer {
     font-size: 55px;
 }
 
-.countdown-placeholder button {
+#footer-btn {
     padding: 15px 35px;
     border-radius: 25px;
     border: none;
@@ -285,56 +289,222 @@ footer {
 /* --------------------------- Media Query ------------------------------------- */
 
 @media only screen and (max-width: 1000px) {
+
+    main {
+        padding: 50px 30px 0;
+        max-height: 100vh;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+
     h1 {
         font-size: 40px;
     }
 
+    /* ------------------- Cards ---------------------------------------------- */
+
     .cards-container {
         flex-direction: column;
+        transform: translateY(10%);
     }
 
     .cards {
         display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
     }
 
-    .tablet {
+    .responsive {
         width: 50%;
-        flex-wrap: wrap;
         text-align: start;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-info-text {
+        padding-top: 30px;
+    }
+
+    /* ------------------- Card Price Text ---------------------------------------------- */
+
+    .bill-text {
+        padding-bottom: 10px;
+    }
+
+    .bill-text-white {
+        padding-bottom: 10px;
+
+    }
+
+    /* ------------------- Footer ---------------------------------------------- */
+
+    footer {
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* ------------------- Launch Date ---------------------------------------------- */
+
+    .launch-date {
+        justify-content: center;
+        align-items: center;
+        padding-top: 550px;
+    }
+
+    /* ------------------- Countdown ---------------------------------------------- */
+
+    .countdown-container {
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 10px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .countdown-placeholder {
+        padding-bottom: 40px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .background-img {
+    /* .background-img {
         position: absolute;
         top: -510px;
         left: -360px;
         scale: 0.4;
 
+    } */
+
+    header {
+        padding: 0;
+    }
+
+    .charts-img {
+        scale: 0.7;
     }
 
     main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-    }
-
-    header {
-        padding: 30px 0 60px;
+        max-height: 190vh;
     }
 
     h1 {
         font-size: 40px;
-    }
-
-    .charts {
-        scale: 0.7;
+        padding: 0 0 20px;
     }
 
     .info-container {
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    #main-btn {
+        margin: 20px 0 0;
+    }
+
+    /* ------------------- Card ---------------------------------------------- */
+
+
+    .cards-container {
+        flex-direction: column;
+        transform: translateY(0%);
+        padding-top: 50px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive {
+        text-align: center;
+        align-items: unset;
+        justify-content: unset;
+        min-width: 60vw;
+    }
+
+    /* ------------------- Card Price Text ---------------------------------------------- */
+
+    .package {
+        padding-bottom: 35px;
+    }
+
+    .card-btn {
+        margin-top: 15px;
+        padding: 18px 40px;
+    }
+
+    /* ------------------- Footer ---------------------------------------------- */
+
+    footer {
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* ------------------- Launch Date ---------------------------------------------- */
+
+    .launch-date {
+        justify-content: center;
+        align-items: center;
+        padding-top: 800px;
+    }
+
+    .launch-date-white {
+        font-weight: 500;
+    }
+
+    .launch-date-blue {
+        font-weight: 500;
+    }
+
+    /* ------------------- Countdown ---------------------------------------------- */
+
+    .countdown-container {
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 10px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .countdown-placeholder {
+        margin: 0 auto;
+    }
+
+    .countdown-timers {
+        display: flex;
+        gap: 10px;
+    }
+
+    .countdown {
+        background-color: #333950;
+        border-radius: 5px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .countdown h2 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    #footer-btn {
+        padding: 18px 40px;
+        border-radius: 25px;
+        border: none;
+
     }
 
 }
