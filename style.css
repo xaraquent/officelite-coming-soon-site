@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Kumbah Sans', sans-serif;
     position: relative;
     overflow-x: hidden;
 }
@@ -205,10 +205,10 @@ footer {
     min-height: 50vh;
     overflow: hidden;
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .footer-background-img {
@@ -234,8 +234,8 @@ footer {
     display: flex;
     letter-spacing: 4px;
     max-width: 1000px;
-    justify-content: flex-start;
-    padding: 300px 0px 10px;
+    margin: 0 auto;
+    padding: 300px 20px 10px;
 }
 
 .launch-date-white {
@@ -254,6 +254,7 @@ footer {
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
+    padding: 0px;
 }
 
 .countdown-placeholder {
@@ -317,6 +318,14 @@ footer {
 
     header {
         padding-bottom: 100px;
+    }
+
+    .header-background-img {
+        position: absolute;
+        top: -310px;
+        left: -160px;
+        scale: 0.5;
+
     }
 
     h1 {
@@ -388,13 +397,13 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    /* .background-img {
+    .header-background-img {
         position: absolute;
         top: -510px;
         left: -360px;
-        scale: 0.4;
+        scale: 0.29;
 
-    } */
+    }
 
     header {
         padding: 0;
