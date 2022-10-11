@@ -138,6 +138,7 @@ p {
     position: relative;
     z-index: 1;
     transform: translate(-50%, 50%);
+    gap: 5px;
 }
 
 .input-container input {
@@ -179,4 +180,16 @@ p {
     margin: 20px 0px;
 }
 
+.button:hover {
+    background-color: hsl(228, 100%, 50%);
+}
+
 /* ------------------- Sign up Input ---------------------------------------------- */
+
+
+
+
+
+/* --------------------------- Media Query ------------------------------------- */
+
+@media only screen and (max-width: 1000px) {}

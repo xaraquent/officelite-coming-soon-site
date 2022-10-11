@@ -205,6 +205,10 @@ footer {
     min-height: 50vh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-background-img {
@@ -230,7 +234,7 @@ footer {
     display: flex;
     letter-spacing: 4px;
     max-width: 1000px;
-    margin: 0px auto;
+    justify-content: flex-start;
     padding: 300px 0px 10px;
 }
 
@@ -405,7 +409,7 @@ footer {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        max-height: 190vh;
+        max-height: 215vh;
     }
 
     h1 {
@@ -457,9 +461,10 @@ footer {
     /* ------------------- Footer ---------------------------------------------- */
 
     footer {
-
         overflow: hidden;
         position: relative;
+        min-height: 100vh;
+        padding-top: 0px;
     }
 
     /* ------------------- Launch Date ---------------------------------------------- */
