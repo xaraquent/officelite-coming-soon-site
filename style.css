@@ -254,7 +254,7 @@ footer {
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+    padding: 0px 20px;
 }
 
 .countdown-placeholder {
