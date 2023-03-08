@@ -2,37 +2,75 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Kumbah Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 50px;
-    padding: 50px 0px;
-    color: #33394F;
-}
-
-p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    color: #6e7795;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 20px 0px;
 }
 
 button {
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5274ff;
+    font-weight: 600;
+}
+
+#main-btn:hover {
+    background-color: hsl(228, 100%, 50%);
+}
+
+/* --------------------------- Header ------------------------------------- */
+header {
+    padding: 20px 0 150px 0;
+}
+
+.header-background-img {
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    animation: rotating-background 15s infinite linear;
+    z-index: -1;
+}
+
+@keyframes rotating-background {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------------- Info --------------------------------------- */
+
+.info-container {
+    display: flex;
+    gap: 40px;
+}
+
+.container-charts-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+.info-container button {
     padding: 15px 35px;
     border-radius: 25px;
     border: none;
@@ -42,55 +80,220 @@ button {
     margin: 30px 0px;
 }
 
-/* --------------------------- Header ------------------------------------- */
+.charts-img {
+    max-width: 600px;
+    width: 100%;
 
-
-
-.header-logo {
-    margin-top: 50px;
 }
 
-.header-background-img {
-    position: absolute;
-    scale: 0.1;
+/* ------------- info-container values ------------- */
+
+h1 {
+    font-size: 50px;
+    padding: 30px 0px;
+    color: #333950;
+    font-weight: 600;
+    line-height: 56px;
 }
 
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #6e7795;
+}
+
+/* ----------------------------------------------------------------------- */
 
 
-/* --------------------------- Info ------------------------------------- */
 
 
+/* ------------------- Cards ---------------------------------------------- */
 
-.info-container {
+
+.cards-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    transform: translateY(50%);
+    gap: 20px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
-.text-info {
-    max-width: 600px;
+.cards {
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+h2 {
+    font-size: 50px;
+
+}
+
+h3 {
+    padding-bottom: 30px;
+}
+
+.basic-and-ultimate-btn {
+    background-color: #e4eaff;
+    color: #5175ff;
+}
+
+.basic-and-ultimate-btn:hover {
+    background-color: #a9bbff;
+}
+
+.pro-btn {
+    background-color: #fff;
+    color: #5175ff;
+}
+
+.pro-btn:hover {
+    background-color: #a9bbff;
+    color: #5175ff;
+}
+
+.card-basic {}
+
+.card-pro {
+    background-color: #5175ff;
+    background-image: url("./starter-code/assets/home/bg-pattern-pricing.svg");
+    background-position: bottom;
+}
+
+.card-pro-background-img {
+    position: absolute;
+    scale: 0.8;
+    bottom: -50px;
+    left: 50px;
+
+    /* animation: rotating-background 15s infinite linear; */
+    /* z-index: 0; */
+}
+
+.card-ultimate {}
+
+.bill-text {
+    color: #252939;
+    padding-bottom: 30px;
+}
+
+.bill-text-white {
+    color: #fff;
+    padding-bottom: 30px;
+
+}
+
+.middle-card-text {
+    color: #c3d0ff;
+}
+
+.cards-text {
+    padding: 10px;
+}
 
 /* --------------------------- Footer ------------------------------------- */
 
 footer {
-    background-color: #25293a;
-    height: 40vh;
-    width: 100vw;
+    background-color: #252939;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 }
 
-.footer-background-img{
+.footer-background-img {
     position: absolute;
-    scale: 0.3;
+    top: 100px;
+    left: -700px;
+    animation: rotating-background-backwards 15s infinite linear;
 }
 
+@keyframes rotating-background-backwards {
+    100% {
+        transform: rotate(0deg);
+    }
 
+    0% {
+        transform: rotate(360deg);
+    }
+}
 
+/* ------------------- Launch Date ---------------------------------------------- */
 
+.launch-date {
+    display: flex;
+    letter-spacing: 4px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 300px 20px 10px;
+}
 
+.launch-date-white {
+    color: #fff;
+}
 
+.launch-date-blue {
+    color: #557aff;
+    text-indent: 5px;
+}
 
+/* ------------------- Countdown ---------------------------------------------- */
+
+.countdown-container {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.countdown-placeholder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown-timers {
+    display: flex;
+    gap: 10px;
+}
+
+.countdown {
+    background-color: #333950;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.countdown h2 {
+    color: #fff;
+    font-size: 55px;
+}
+
+#footer-btn {
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5175ff;
+    color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px -12px; */
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+#footer-btn:hover {
+    background-color: hsl(228, 100%, 50%);
+}
 
 
 
@@ -106,13 +309,228 @@ footer {
 
 /* --------------------------- Media Query ------------------------------------- */
 
+@media only screen and (max-width: 1000px) {
 
-@media only screen and (max-width: 450px) {
-    .background-img {
+    main {
+        padding: 50px 30px 0;
+        max-height: 100vh;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+
+    .header-background-img {
+        position: absolute;
+        top: -310px;
+        left: -160px;
+        scale: 0.5;
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* ------------------- Cards ---------------------------------------------- */
+
+    .cards-container {
+        flex-direction: column;
+        transform: translateY(10%);
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+
+    .responsive {
+        width: 50%;
+        text-align: start;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-info-text {
+        padding-top: 30px;
+    }
+
+    /* ------------------- Card Price Text ---------------------------------------------- */
+
+    .bill-text {
+        padding-bottom: 10px;
+    }
+
+    .bill-text-white {
+        padding-bottom: 10px;
+
+    }
+
+    /* ------------------- Footer ---------------------------------------------- */
+
+    footer {
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* ------------------- Launch Date ---------------------------------------------- */
+
+    .launch-date {
+        justify-content: center;
+        align-items: center;
+        padding-top: 550px;
+    }
+
+    /* ------------------- Countdown ---------------------------------------------- */
+
+    .countdown-container {
+        padding: 10px 20px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .countdown-placeholder {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-background-img {
         position: absolute;
         top: -510px;
         left: -360px;
-        scale: 0.4;
+        scale: 0.29;
 
     }
+
+    header {
+        padding: 0;
+    }
+
+    .charts-img {
+        scale: 0.7;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        max-height: 215vh;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 0 0 20px;
+    }
+
+    .info-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #main-btn {
+        margin: 20px 0 0;
+    }
+
+    /* ------------------- Card ---------------------------------------------- */
+
+
+    .cards-container {
+        flex-direction: column;
+        transform: translateY(0%);
+        padding-top: 50px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive {
+        text-align: center;
+        align-items: unset;
+        justify-content: unset;
+        min-width: 60vw;
+    }
+
+    /* ------------------- Card Price Text ---------------------------------------------- */
+
+    .package {
+        padding-bottom: 35px;
+    }
+
+    .card-btn {
+        margin-top: 15px;
+        padding: 18px 40px;
+    }
+
+    /* ------------------- Footer ---------------------------------------------- */
+
+    footer {
+        overflow: hidden;
+        position: relative;
+        min-height: 100vh;
+        padding-top: 0px;
+    }
+
+    /* ------------------- Launch Date ---------------------------------------------- */
+
+    .launch-date {
+        justify-content: center;
+        align-items: center;
+        padding-top: 800px;
+    }
+
+    .launch-date-white {
+        font-weight: 500;
+    }
+
+    .launch-date-blue {
+        font-weight: 500;
+    }
+
+    /* ------------------- Countdown ---------------------------------------------- */
+
+    .countdown-container {
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 10px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .countdown-placeholder {
+        margin: 0 auto;
+    }
+
+    .countdown-timers {
+        display: flex;
+        gap: 10px;
+    }
+
+    .countdown {
+        background-color: #333950;
+        border-radius: 5px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .countdown h2 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    #footer-btn {
+        padding: 18px 40px;
+        border-radius: 25px;
+        border: none;
+
+    }
+
 }

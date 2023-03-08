@@ -1,0 +1,195 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 0px;
+    height: 100vh;
+}
+
+
+
+/* --------------------------- Header ------------------------------------- */
+header {
+    padding: 20px 0 100px 0;
+}
+
+/* --------------------------- Info --------------------------------------- */
+
+.info-container {
+    display: flex;
+    gap: 40px;
+}
+
+.text-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* ------------- info-container values ------------- */
+
+h1 {
+    font-size: 50px;
+    padding: 30px 0px;
+    color: #333950;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #6e7795;
+}
+
+/* ------------------- Launch Date ---------------------------------------------- */
+
+.launch-date {
+    display: flex;
+    letter-spacing: 4px;
+    padding: 20px 0px;
+}
+
+.launch-date-white {
+    color: #333950;
+    font-weight: 500;
+}
+
+.launch-date-blue {
+    color: #557aff;
+    text-indent: 5px;
+    font-weight: 500;
+}
+
+/* ------------------- Countdown ---------------------------------------------- */
+
+.countdown-container {
+    max-width: 1000px;
+    margin: 0px auto;
+    /* padding: 300px 20px 0px; */
+}
+
+.countdown-placeholder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown-timers {
+    display: flex;
+    gap: 10px;
+}
+
+.countdown {
+    background-color: #edf1ff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.countdown h2 {
+    color: #557aff;
+    font-size: 55px;
+}
+
+/* ------------------- Right side ---------------------------------------------- */
+
+.right-side-bg-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.right-side-container {
+    width: 500px;
+    background-color: #333950;
+    position: relative;
+    background-image: url(./starter-code/assets/sign-up/bg-pattern-side.svg);
+    background-position: -750px -800px;
+    background-size: 165vh;
+    background-repeat: no-repeat;
+
+}
+
+.img-container {
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+
+.input-container {
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+    gap: 5px;
+}
+
+.input-container input {
+    border: none;
+    border-bottom: 1px solid #b2b1b1;
+}
+
+#name {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#email-address {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#phone-number {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#company {
+    color: #cfd1da;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+.button {
+    padding: 18px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5175ff;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.button:hover {
+    background-color: hsl(228, 100%, 50%);
+}
+
+/* ------------------- Sign up Input ---------------------------------------------- */
+
+
+
+
+
+/* --------------------------- Media Query ------------------------------------- */
+
+@media only screen and (max-width: 1000px) {}
